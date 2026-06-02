@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do Site</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌱 Nome do Site
+        </div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#producao">Produção</a>
+            <a href="#ambiente">Meio Ambiente</a>
+            <a href="#beneficios">Benefícios</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar...">
+            <button>🔍</button>
+        </div>
+
+    </header>
+
+    <section class="banner" id="inicio">
+
+        <div class="banner-texto">
+            <h1>AGRO FORTE FUTURO SUSTENTÁVEL</h1>
+
+            <h2>Equilíbrio entre Produção e Meio Ambiente</h2>
+
+            <p>
+                Conheça como a produção sustentável de aveia contribui para a preservação ambiental,
+                segurança alimentar e desenvolvimento econômico.
+            </p>
+
+            <a href="#producao" class="btn">Saiba Mais</a>
+        </div>
+
+    </section>
+
+    <main id="producao">
+
+        <section class="card">
+            <h2>🌾 Produção de Aveia</h2>
+
+            <p>
+                A aveia é um cereal amplamente cultivado no Brasil. Sua produção é importante
+                para alimentação humana, animal e para a conservação do solo.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🌱 Agricultura Sustentável</h2>
+
+            <p>
+                Técnicas sustentáveis reduzem o uso excessivo de recursos naturais e ajudam a
+                manter a fertilidade do solo para futuras gerações.
+            </p>
+        </section>
+
+    </main>
+
+    <main id="ambiente">
+
+        <section class="card">
+            <h2>🌎 Preservação Ambiental</h2>
+
+            <p>
+                A aveia atua como cobertura vegetal, protegendo o solo contra erosão,
+                reduzindo perdas de nutrientes e melhorando a retenção de água.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>♻ Benefícios para o Futuro</h2>
+
+            <p>
+                Produzir alimentos de forma responsável garante equilíbrio entre produção,
+                economia e conservação ambiental.
+            </p>
+        </section>
+
+    </main>
+
+    <section class="quiz" id="quiz">
+
+        <h2>🎯 Quiz Agro Sustentável</h2>
+
+        <div class="pergunta">
+
+            <p>1. Qual é o principal tema do site?</p>
+
+            <button onclick="responder(this,true)">
+                Produção sustentável de aveia
+            </button>
+
+            <button onclick="responder(this,false)">
+                Produção de petróleo
+            </button>
+
+            <button onclick="responder(this,false)">
+                Construção civil
+            </button>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p>2. A aveia ajuda a:</p>
+
+            <button onclick="responder(this,true)">
+                Proteger o solo
+            </button>
+
+            <button onclick="responder(this,false)">
+                Aumentar a poluição
+            </button>
+
+            <button onclick="responder(this,false)">
+                Destruir nascentes
+            </button>
+
+        </div>
+
+        <div class="pergunta">
+
+            <p>3. O agro sustentável busca:</p>
+
+            <button onclick="responder(this,true)">
+                Equilíbrio entre produção e meio ambiente
+            </button>
+
+            <button onclick="responder(this,false)">
+                Apenas lucro
+            </button>
+
+            <button onclick="responder(this,false)">
+                Mais desperdício
+            </button>
+
+        </div>
+
+        <h3 id="resultado"></h3>
+
+    </section>
+
+    <footer>
+
+        <h3>🌱 Nome do Site</h3>
+
+        <p>
+            Agro Forte Futuro Sustentável - Equilíbrio entre Produção e Meio Ambiente
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
